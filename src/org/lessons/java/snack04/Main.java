@@ -16,13 +16,13 @@ public class Main {
 		list.add("Aldo");
 		list.add("Giovanni");
 		list.add("Giacomo");
-		list.add("Luciana");
+		list.add("Gianluca");
 		
 		System.out.println(list);
 		
 		//manual order
 		
-		//bubble swap
+		//bubble sort
 		
 		
 		int length = list.size();
