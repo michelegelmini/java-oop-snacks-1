@@ -19,9 +19,17 @@ public class Main {
 		lista.add("Luciana");
 		
 		System.out.println(lista);
+		
+		//ordinamento manuale
+		
+		//???
+		
+		
+		
 
+		
+		//ordinamento automatico
 		Collections.sort(lista);
-
 
 		System.out.println(lista);
 	}
