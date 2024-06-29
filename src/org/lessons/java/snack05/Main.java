@@ -3,6 +3,14 @@ package org.lessons.java.snack05;
 import java.util.*;
 
 public class Main {
+	
+	
+	public void addElement(String key, String value) {
+		boolean duplicatedFound = false;
+		
+		
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,6 +23,8 @@ public class Main {
 		capitalCities.put("Germania", "Berlino");
 		
 		System.out.println(capitalCities);
+		
+		
 		
 		
 
