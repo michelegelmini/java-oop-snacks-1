@@ -6,32 +6,58 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<String> lista = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<String>();
 		
-		lista.add("Mario");
-		lista.add("Concetta");
-		lista.add("Luigi");
-		lista.add("Genoveffa");
-		lista.add("Claudia");
-		lista.add("Aldo");
-		lista.add("Giovanni");
-		lista.add("Giacomo");
-		lista.add("Luciana");
+		list.add("Mario");
+		list.add("Concetta");
+		list.add("Luigi");
+		list.add("Genoveffa");
+		list.add("Claudia");
+		list.add("Aldo");
+		list.add("Giovanni");
+		list.add("Giacomo");
+		list.add("Luciana");
 		
-		System.out.println(lista);
+		System.out.println(list);
 		
-		//ordinamento manuale
+		//manual order
 		
-		//???
+		//bubble swap
 		
 		
+		int length = list.size();
+		boolean swapped = false;
 		
+		do {
+			swapped = false;
+			
+			for(int index = 1 ; index < length ; index ++) {
+				String previousElement = list.get(index-1);
+				String nextElement = list.get(index);
+				if(previousElement.compareToIgnoreCase(nextElement) > 0 ) {
+					//must swap elements
+					list.set(index, previousElement);
+					list.set(index - 1, nextElement);
+					swapped = true;
+					System.out.println(list);
+				}
+			
+			
+			}
+			
+		} while (swapped);
 
 		
-		//ordinamento automatico
-		Collections.sort(lista);
+		//automatic order
+		Collections.sort(list);
 
-		System.out.println(lista);
+		System.out.println(list);
+		
+		
+		
+	
+		}
+		
 	}
 
-}
+
