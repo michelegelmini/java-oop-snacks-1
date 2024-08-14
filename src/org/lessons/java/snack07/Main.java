@@ -25,17 +25,25 @@ public class Main {
 		inputName = scanner.nextLine();
 		
 		
-		System.out.println(findElement(inputName));
+		System.out.println(findElement(guests, inputName));
 
 	}
 	
-	public static int findElement(String nameToSearch) {
-		if (guests.contains(nameToSearch)) {
-			return 1;
-		} else {		
-		return 0;
+	public static int findElement(ArrayList<String> list, String nameToSearch) {
+		int index = 0;
+				
+		while(index < list.size()) {
+			if (list.get(index).equals(nameToSearch) ) {
+				return index;
+			}		
+			index++;
+			}
+		return -1;
 		}
+		
+		
 		
 	}
 
-}
+
+
